@@ -1,10 +1,42 @@
 <% provide(:title, "Event") %>
-<h1>Event</h1>
-<p>
-	We are still working on it,, hold on tight!
-	<!-- <a href="http://www.railstutorial.org/#help">Rails Tutorial help
-		section</a>.
-		To get help on this sample app, see the
-		<a href="http://www.railstutorial.org/book"><em>Ruby on Rails
-			Tutorial</em> book</a>. -->
-		</p>
+<!DOCTYPE html>
+<html>
+<div class= "container">
+  <head>
+    <style type="text/css">
+      html, body, #map-canvas { height: 100%; margin: 10px; padding: 10px;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxwIpyX1Wyp1ql_sBHoPyOOTlR99biUMY">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: { lat: 3.067475, lng: 101.769871},
+          zoom: 6
+
+        };
+        var map = new google.maps.Map(document.getElementById('map-canvas'),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+<div id="map-canvas" style="
+    height: 500px;
+    padding-top: 30px;
+    position:relative; overflow: hidden;
+    transform: translateZ(0px); 
+    width: 520px;
+    float: left;
+"></div>
+     <div class="row">
+        <div class="large-8 columns" style="width: 500px;float: right;height: 500px; float:left;">
+          <h4>Malaysia.We are here.</h4>
+          <p>Malaysia is a Southeast Asian country occupying the Malaysian Peninsula and part of the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European influences. The sprawling capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers including the iconic, 451m-tall Petronas Twin Towers.</p>
+          <p>マレーシアは、東南アジアのマレー半島南部とボルネオ島北部を領域とする連邦立憲君主制国家で、イギリス連邦加盟国である。タイ、インドネシア、ブルネイと陸上の国境線で接しており、シンガポール、フィリピンと海を隔てて近接する。ASEANの一員。</p>
+          
+        </div>
+        </div>
+</html>
