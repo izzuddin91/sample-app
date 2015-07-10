@@ -9,7 +9,7 @@ gem 'bootstrap-sass',       '3.2.0.0'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-google-oauth2'
 gem 'json'
-gem 'sqlite3'
+
 
 gem 'pg'
 gem 'twitter'
@@ -50,6 +50,7 @@ group :development, :test do
   gem 'spring'
   gem 'rspec-rails', '~>3.0'
   gem 'better_errors'
+    gem 'sqlite3'
 end
 
 group :test do
