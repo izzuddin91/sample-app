@@ -59,7 +59,7 @@ end
 
 
 
-
+gem 'jquery-turbolinks'
 
 
 
