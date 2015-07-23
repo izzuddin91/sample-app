@@ -1,0 +1,194 @@
+<% provide(:title, "Event") %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap 3</title>
+  <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id = "myCarousel" class="carousel slide">
+    <ol class= "carousel-indicators">
+      <li data-target = "#myCarousel" data-slide-to= "0" class="active"></li>
+      <li data-target = "#myCarousel" data-slide-to= "1" ></li>
+      <li data-target = "#myCarousel" data-slide-to= "2" ></li>
+      <li data-target = "#myCarousel" data-slide-to= "3" ></li>
+    </ol>
+    <div class = "carousel-inner">
+      <div class= "item active">
+        <%= image_tag("tesla1.jpg", alt: "tesla", class: "img-responsive")%>
+        <div class="carousel-caption" style="font:arial">
+          <h1 style= "margin-bottom: 180px;">Tesla Model S</h1>
+        </div>
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("tesla2.png", alt: "tesla", class: "img-responsive")%> 
+        <div class= "carousel-caption">
+<h3 style="margin-bottom: 230px;"> An evolution in automobile engineering</h3>
+        </div>      
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("tesla3.png", alt: "tesla", class: "img-responsive")%>  
+        <div class= "carousel-caption">
+          <h1 style="margin-bottom: 130px;margin-left: 90px;">0 to 60 mph = 3.1 seconds</h1>
+        </div>    
+
+      </div>
+
+      <div class= "item ">
+        <%= image_tag("tesla4.JPG", alt: "tesla", class: "img-responsive")%> 
+        <div class= "carousel-caption">
+<h3 style="margin-bottom: 230px;margin-left: 0px;margin-right: 200px;">Zero emission.<br>Zero Compromise.</h3>
+        </div>         
+      </div>
+    </div>
+
+
+    <a href="#myCarousel" class="carousel-control left" data-slide="prev">
+      <span class="icon-prev"></span>
+    </a>
+    <a href="#myCarousel" class="carousel-control right" data-slide="next">
+      <span class="icon-next"></span>
+    </a>
+  </div>
+</body>
+
+<body>
+  <style type="text/css">
+.container {
+  margin: 0 auto;  
+  width: 1200px;
+}
+ 
+.row {
+  display: flex;
+  width: 100%;
+}
+ 
+.col-middle {
+  width: 3%;
+}
+ 
+.col-2 {
+  width: 16.66%;
+}
+ 
+.col-5 {
+  width: 41.67%;
+}
+ 
+.col-6 {
+  width: 50%;
+}
+ 
+h4{
+  margin: auto;
+}
+ 
+h4, p{
+  margin-left: 10px;
+}
+ 
+img {
+  max-width: 100%;
+}
+  </style>
+
+  <div class="container">
+    <div id="tour">
+      
+      <h3>The Super-Tesla-S</h3>
+      <div class="feature">
+        <div class="row">
+          <div class="col-6">
+            <h4>Impression</h4>
+            <p>I've had test drive with this car. Believe me. It's hot! ..like, really really, hot, looking sedan. EV is no longer a golf cart.
+             I had a test driven the MINI and Audi A1 before, and believe me, Tesla test drive is the best!!!that gave me a heartthrob. The sales advisor sitting next to me goes crazy,
+             'faster, faster!! Just push hard the gas pedal after the light turns green!!'
+             Take that, petrol head. Tesla model S.</p>
+             <p>The idea is to build a luxury sedan with conventional looking , looks that consumer could relate to the current market. But that's where the similarity ends. It has no engine, no radiator, no propeller shaft, no oil lubricant, no exhaust pipe, no gas tank, no catalytic converter, no muffler. What's propelling the vehicle is essentially a plated of stacked batteries, a watermelon sized motor and tires with air suspension. The car's bottom structure is can be similarly compared with a skateboard shape, and everything that lies from the bottom upwards is called an opportunity space.
+              I guess Tesla's not only reinventing the car's structure, they also can get away inventing new words, as what they call this space the 'frunk'. </p>
+          </div>
+          <div class="col-middle">
+          </div>
+          <div class="col-6">
+<img src="/assets/tesla_no_grill-43da523d38c838480b95fd6bd6a51fa2861570c004a6275450d8c8a8f2925163.jpg" alt="Tesla no grill 43da523d38c838480b95fd6bd6a51fa2861570c004a6275450d8c8a8f2925163" style="
+    width: 400px;
+">
+          </div>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="row">
+          <div class="col-6">
+  <%= image_tag("tesla_frunk.JPG")%> 
+         </div>
+         <div class="col-middle">
+         </div>
+         <div class="col-6">
+          <h4>Similar, but not the same.</h4>
+          <p>The model s front end looks conventional at a glance, but when you look at it more closely, you'll see the upper part is actually an opaque plastic. Its not a grill like it would be in a normal car, and that's because its an electric motor, no need for radiator. There are some space for heat conditioner and power electronics, but it doesn't really need as much airflow to cool the car as the regular one does.</p>
+          <p>Stepping into tesla, the one thing that you tend to do is trying to release the handbrake. Guess what, there's no hand brake!! And they make drive mode selector as another  signal lever. Mind boggling.
+
+there's a lot of details I want to write in this blog, but lets just take most essential part. tesla model S performance can go from 0 to 60 in roughly 4 seconds, top speed of 209km/h. for the time being, there are only 20 supercharging stations in japan. And they plan to offer CHAdeMO adaptor(standard charging station in japan ) </p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="row">
+          <div class="col-6">
+<h4 style="
+    padding-top: 20px;
+">Did you forgot the engine?</h4>
+
+            <p>No.. as a matter of fact, there is no engine! Well that's because the electric motor is actually backed by the rear axle. So you'll get another extra 5 foot cubic luggage room more.
+              Another trunk in the back would give another 26 cubic feet luggage room, and and total flat in the back would give a total of 60 cubic feet of space.</p>
+            <p>The model s front end looks conventional at a glance, but when you look at it more closely, you'll see the upper part is actually an opaque plastic. Its not a grill like it would be in a normal car, and that's because its an electric motor, no need for radiator. There are some space for heat conditioner and power electronics, but it doesn't really need as much airflow to cool the car as the regular one does.</p>
+          </div>
+          <div class="col-middle">
+          </div>
+          <div class="col-6">
+<%= image_tag("steering_wheel.JPG")%>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="pricing">
+      <h2>Pricing</h2>
+      <dl>
+        <dt>70D / 70kWh Battery All Wheel Drive</dt>
+        <dd>$57,500</dd>
+        <dt>85D/ 85kWh Battery All Wheel Drive </dt>
+        <dd>$67,500</dd>
+        <dt>P85D Performance/ 85kWh Battery All Wheel Drive</dt>
+        <dd>$87,500</dd>
+      </dl>
+    </div>
+    <div id="about">
+      <h2>Location</h2>
+      <div id="map-canvas" style=" float: left;">
+     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3246.0683222335824!2d139.5793686!3d35.55201479999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f639e4307345%3A0xa342c624361f5aee!2z44OO44O844K544Od44O844OI44O744Oi44O844Or!5e0!3m2!1sen!2smy!4v1436909485085" width="400" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+<div class="large-8 columns" style="width: 500px;float: right;height: 500px; float:left;margin-left: 200px;">
+      <p>This photo and details was taken during a test drive at Northport Mall,  Yokohama, Japan. the pictures are definitely taken by me.<br>
+      Anyone who is also studying programming? give us a shout out!! email us at izzuddin91@me.com.
+      </p>
+    </div>
+
+
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js.bootstrap.js"></script>
+
+
+
+
+</html>

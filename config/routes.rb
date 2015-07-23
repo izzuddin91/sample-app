@@ -12,9 +12,11 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
 
 
+
 resources :users
 
-
+get 'tesla_model_s' => 'static_pages#tesla_model_s' 
+get 'bmw_i3' => 'static_pages#bmw_i3'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

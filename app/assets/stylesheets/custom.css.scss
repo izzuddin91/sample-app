@@ -143,5 +143,35 @@ input {
 
 
 
+html,
+body {
+   margin:0;
+   padding:0;
+   height:100%;
+}
+#content {
+   min-height:100%;
+   position:relative;
+}
+#header {
+   background:#ff0;
+   padding:10px;
+}
+#body {
+   padding:10px;
+   padding-bottom:60px;   /* Height of the footer */
+}
+   #footer {
+    bottom: 0;
+    color: #707070;
+    height: 2em;
+    left: 0;
+    position: fixed; 
+    bottom:0;
+    font-size: small;
+    width:100%;
+}
+
+
 
 

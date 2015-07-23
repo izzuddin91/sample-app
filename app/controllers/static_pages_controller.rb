@@ -10,5 +10,12 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+
+  def tesla_model_s
+  end
   
+
+  def bmw_i3
+    
+  end
 end
