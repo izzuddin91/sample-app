@@ -17,6 +17,7 @@ resources :users
 
 get 'tesla_model_s' => 'static_pages#tesla_model_s' 
 get 'bmw_i3' => 'static_pages#bmw_i3'
+get 'electric_motor' => 'static_pages#electric_motor'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
