@@ -15,7 +15,7 @@ class StaticPagesController < ApplicationController
   end
   
 
-  def bmw_i3
+  def apple_watch
     
   end
 end

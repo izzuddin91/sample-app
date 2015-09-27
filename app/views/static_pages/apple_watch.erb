@@ -1,0 +1,67 @@
+<div class="container">
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=322707754420549";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+  <h1>"Hello World!" in apple watch</h1>
+<div class="fb-like" data-href="https://stormy-garden-1077.herokuapp.com/apple_watch" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div><br>
+   <img class="featurette-image img-responsive center-block" style="padding-right:40px;"src="https://recodetech.files.wordpress.com/2015/04/circle-applewatch.png?w=1600"/><br>
+<p>I’m  pretty sure everyone knows what's “hello world” mean. Or at least those from engineering background does. I recalled the first time I learned C, the first time I managed to print out “hello world”, it was like having a superpower that computer would listen my command. Fast forward 2015, we’re seeing a lot programs built on iOS and android device built across many platform and languages.</p>
+<p>just this week, Apple had released a complete developer toolset for Apple watch, along with other apple devices. Still an uncharted territory, apple watch opens up a new possibilities for creating watch app, along with its new apple’s programming language. So that’s being said, how do you print out “hello world” on apple watch?</p>
+
+<p>for this brief tutorial you need to have a Xcode version no 7. The one I’m using currently is beta version 7.1, that should also works.</p>
+<br>
+<%= image_tag("1.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>upon prompting the application, you will have the option of creating a single page for playground, create a new Xcode or use the existing one. We’ll start fresh, by creating a new Xcode project. Under watchOS/Application, you’ll only have a single option of creating a template for iOS with watch kit app. click next and fill in the necessary details.</p>
+<br>
+<%= image_tag("2.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<%= image_tag("3.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>If you’re new to Xcode’s environment, you will see this humongous lines of code , files, switch and toggle. DON’T freak out. in this tutorial I’m just gonna show you how to print out words on apple watch, just follow my guideline.</p>
+<br>
+
+<%= image_tag("4.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>At the left sidebar, you’ll see something quite similar to sublime text editor(or perhaps any text editor). A number of files are grouped together for specific part’s development( iPhone or apple watch ). Go down at the 4th file((your app name) WatchKit App) and click the file named Interface.storyboard.</p>
+<br>
+<%= image_tag("5.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>One noticeable experience using Xcode is you can directly design the interface.
+If you know how to “inspect element” in google chrome, you’ll know what I mean.
+
+at the very bottom left of the console you will see a list of object under the object library. this stores the label,switch and other functions. for now we’re just going to use label. you can scroll or just writes in “label” in the search box.</p>
+
+<p>when the label column is visible, hold click and drag it to the face of the simulator. you will see a text box with ‘label’ written and attribute inspector pop up at the left sidebar.
+
+At the very first section of sidebar ‘Label’, there’s a text field named text. change it to “Hello World!” and voila!</p><br>
+<%= image_tag("6.png",class: "featurette-image img-responsive center-block" ) %><br>
+<%= image_tag("7.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>One last step is to go to the watch kit simulator. go to the top nav bar, target the watch kit app and choose either of the iPhone 6 or 6s plus simulator. click the play button, and the simulator should pop up with “hello world!” written on it.</p>
+<br>
+<%= image_tag("8.png",class: "featurette-image img-responsive center-block" ) %><br>
+<%= image_tag("9.png",class: "featurette-image img-responsive center-block" ) %>
+<br>
+<p>Coming from ruby on rails background, I find that programming in apple iOS is freaking complicated. back then when I studied ruby, a text editor and terminal are all that is needed for developing website based on ruby. while its more like driving a car, coding using Xcode was more like, manoeuvring a submarine..along the process then you’ll will learn the function of those specific section or codes.</p>
+<br><br>
+<div class="col-md-3"><%= image_tag("10.jpg",class: "featurette-image img-responsive center-block" ) %><br> </div>
+<div class="col-md-9">
+  <h2>About me</h2>
+  <ul>
+    <li>Izzuddin Cheras</li>
+    <li>Studied automotive engineering, grauated from Tokai University, Japan '14</li>
+    <li>Gave up engineering job and went to programming course held by MaGIC</li>
+    <li>currently working in a startup company</li>
+  </ul>
+</div>
+
+
+</div>

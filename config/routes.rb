@@ -16,7 +16,7 @@ Rails.application.routes.draw do
 resources :users
 
 get 'tesla_model_s' => 'static_pages#tesla_model_s' 
-get 'bmw_i3' => 'static_pages#bmw_i3'
+get 'apple_watch' => 'static_pages#apple_watch'
 get 'electric_motor' => 'static_pages#electric_motor'
 
   # The priority is based upon order of creation: first created -> highest priority.
